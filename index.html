@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>SlideContent</title>
+	<style type="text/css" media="screen">
+	body{margin:0;padding:0;font-family:Arial;color:white}
+	a{color:black;text-decoration:none}
+	ul{list-style:none;margin:0;padding:20px;}
+	p{padding:50px 150px}
+	.current{color:#FF0000}
+	#container{position:relative;}
+	#nav{display:inline-block;z-index:100;position:fixed;background:white;position:absolute;top:50px}
+	.test{height:1000px;width:100%;position:absolute;top:0;display:none;}
+		#test_1{background:#b4d2cb;}
+		#test_2{background:#809d63;}
+		#test_3{background:#63859d;}
+		#test_4{background:#9d6396;}
+		#test_5{background:#91847a;}
+	</style>
+</head>
+
+<body>
+<div id="container">
+	<ul id="nav">
+		<li><a href="#test_1">Content 1</a></li>
+		<li><a href="#test_2">Content 2</a></li>
+		<li><a href="#test_3">Content 3</a></li>
+		<li><a href="#test_4">Content 4</a></li>
+		<li><a href="#test_5">Content 5</a></li>
+	</ul>
+
+	<div class="test" id="test_1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="test" id="test_2">
+		<p>qsdqsdqsd</p>
+	</div>
+	<div class="test" id="test_3">
+		<p>wxcwxcwcwcx</p>
+	</div>
+	<div class="test" id="test_4">
+		<p>azeazeza ea ze a eazz a</p>
+	</div>
+	<div class="test" id="test_5">
+		<p>x cvxc vxc vxc vxcv xcvxc vxcv xcvx xc vx</p>
+	</div>
+	
+</div>
+	
+<script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript"></script>
+<script src="jquery.slideContent.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		//
+		$("#container").slideContent();
+	});
+</script>
+</body>
+</html>
